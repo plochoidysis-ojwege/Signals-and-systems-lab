@@ -53,7 +53,7 @@ These are the calculations by hand - https://github.com/plochoidysis-ojwege/Sign
 ---
 ***The codes***
 
-Further , the code results mosly matched the hand calculations, with negligable differences(floating-point precision in MATLAB gave a very small residual) .Here are the codes :
+Further , the code results mostly matched the hand calculations, with negligable differences(floating-point precision in MATLAB gave a very small residual) .Here are the codes :
 https://github.com/plochoidysis-ojwege/Signals-and-systems-lab/tree/main/Signals%20and%20systems%20lab%201/Results/matlab%20codes
 
 ---
