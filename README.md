@@ -6,8 +6,7 @@
 - Understanding and plotting specific signals: signum, rectangular, triangular,
  sinc, impulse, step, square, discrete exponential, and discrete cosine.
 - Using subplots to analyze the relationship between frequencies for discrete cosine and exponential signals.
-- Calculating inner products of signals and use them to compute energy
- and power, comparing hand calculations with code results.
+- Calculating inner products of signals and using them to compute energy and power, comparing hand calculations with code results.
 - Stating and verifying the Cauchy-Schwarz inequality.
 - Classifying systems based on linearity, time-invariance, causality, and stability.
 - Performing advanced signal operations and analyze their properties
