@@ -1,6 +1,7 @@
 **Study of signals and systems**
 
 ** Lab Objectives**
+
  The objectives of this lab are:
 - Understand and plot specific signals: signum, rectangular, triangular,
  sinc, impulse, step, square, discrete exponential, and discrete cosine.
