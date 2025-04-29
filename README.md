@@ -46,12 +46,13 @@ Similar to the cosine signals, the discrete exponential signals with k+l = N sho
 ![ Frequency Analysis Using Subplots-Real parts of exponential signals](https://github.com/plochoidysis-ojwege/Signals-and-systems-lab/blob/main/Signals%20and%20systems%20lab%201/Results/Plots/Plot%20of%20exponential%20signals.png)
 
 ---
-***Hand calculation***
+***Hand calculations***
 
 These are the calculations by hand - https://github.com/plochoidysis-ojwege/Signals-and-systems-lab/blob/main/Signals%20and%20systems%20lab%201/Results/calculations%20by%20hand/hands.pdf
 
 ---
 ***The codes***
+
 Further , the code results mosly matched the hand calculations, with negligable differences(floating-point precision in MATLAB gave a very small residual) .Here are the codes :
 https://github.com/plochoidysis-ojwege/Signals-and-systems-lab/tree/main/Signals%20and%20systems%20lab%201/Results/matlab%20codes
 
