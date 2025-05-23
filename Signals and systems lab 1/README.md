@@ -1,4 +1,4 @@
-# Study of signals and systems
+# Analysis of specific signals and systems
 
 ## Lab Objectives
 
