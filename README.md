@@ -48,13 +48,20 @@ Similar to the cosine signals, the discrete exponential signals with k+l = N sho
 ---
 ***Hand calculations***
 
-These are the calculations by hand - https://github.com/plochoidysis-ojwege/Signals-and-systems-lab/blob/main/Signals%20and%20systems%20lab%201/Results/calculations%20by%20hand/hands.pdf
+These are the calculations by hand
+- [Raw PDF file of the calculations by hand](https://github.com/plochoidysis-ojwege/Signals-and-systems-lab/blob/main/Signals%20and%20systems%20lab%201/Results/calculations%20by%20hand/hands.pdf)
 
 ---
 ***The codes***
 
-Further , the code results mostly matched the hand calculations, with negligable differences(floating-point precision in MATLAB gave a very small residual) .Here are the codes :
-https://github.com/plochoidysis-ojwege/Signals-and-systems-lab/tree/main/Signals%20and%20systems%20lab%201/Results/matlab%20codes
-
+Further , the code results mostly matched the hand calculations, with negligable differences(floating-point precision in MATLAB gave a very small residual) .Here are the  MATLAB codes :
+- [Continuous Time signals](https://github.com/plochoidysis-ojwege/Signals-and-systems-lab/blob/main/Signals%20and%20systems%20lab%201/Results/matlab%20codes/CT_signals.m)
+- [Discrete Time signals](https://github.com/plochoidysis-ojwege/Signals-and-systems-lab/blob/main/Signals%20and%20systems%20lab%201/Results/matlab%20codes/DT_signals.m)
+- [Cosine signals frequency analysis](https://github.com/plochoidysis-ojwege/Signals-and-systems-lab/blob/main/Signals%20and%20systems%20lab%201/Results/matlab%20codes/Cosine_signals_frequency_analysis.m)
+- [Exponential signals real part frequency analysis](https://github.com/plochoidysis-ojwege/Signals-and-systems-lab/blob/main/Signals%20and%20systems%20lab%201/Results/matlab%20codes/Plot_of_exponential-signals_real_part_frequency_analysis.m)
+- [System classification](https://github.com/plochoidysis-ojwege/Signals-and-systems-lab/blob/main/Signals%20and%20systems%20lab%201/Results/matlab%20codes/system_classification.m)
+- [Cauchy Schwarz verification](https://github.com/plochoidysis-ojwege/Signals-and-systems-lab/blob/main/Signals%20and%20systems%20lab%201/Results/matlab%20codes/Cauchy_Schwarz.m)
 ---
-## For more comprehensive overview, the lab report has it all: [Signals_and_systems_Lab_1.pdf](https://github.com/plochoidysis-ojwege/Signals-and-systems-lab/blob/main/Signals%20and%20systems%20lab%201/The%20Lab%20Report/Signals_and_systems_Lab_1.pdf) 
+## For more comprehensive overview, the lab report has it all: 
+- [Raw PDF file of Signals and systems lab 1 report](https://github.com/plochoidysis-ojwege/Signals-and-systems-lab/blob/main/Signals%20and%20systems%20lab%201/The%20Lab%20Report/Signals_and_systems_Lab_1.pdf) 
+- [.tex code of the lab report](https://github.com/plochoidysis-ojwege/Signals-and-systems-lab/blob/main/Signals%20and%20systems%20lab%201/The%20Lab%20Report/main.tex)
