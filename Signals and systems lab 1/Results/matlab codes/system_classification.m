@@ -18,12 +18,11 @@ is_linear_dt = isequal(y1_dt + y2_dt, y3_dt);
 % For CT System: Integral from -∞ to t (example representation)
 syms tau t_sym;
 x_tau = exp(-tau);
-y_t = int(x_tau, tau, -inf, t_sym); % This is an example; in practice, a CT system's causality is determined by its impulse response.
+y_t = int(x_tau, tau, -inf, t_sym); 
 % For DT System: Summation from -∞ to n (example representation)
 syms k n_sym;
 x_k = k^2;
-y_n = symsum(x_k, k, -inf, n_sym); % Example sum (diverges, but used here illustratively)
-% Checking causality (using the signal domains)
+y_n = symsum(x_k, k, -inf, n_sym); 
 is_causal_ct = all(t >= 0); % System is causal if t >= 0 (for t vector defined earlier)
 is_stable_ct = energy_x_ct < inf; % System is stable if it has finite energy
 is_causal_dt = all(n >= 0); % System is causal if n >= 0
