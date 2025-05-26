@@ -1,14 +1,18 @@
-\documentclass[12pt]{article}
-\usepackage{graphicx} %  inserting images
+\documentclass[10pt, twocolumn]{article}
+
+\usepackage{graphicx}
 \usepackage{pdfpages}
 \usepackage{setspace}
+\usepackage[colorlinks,linkcolor=blue]{hyperref}
+\usepackage[backend=biber,style=ieee]{biblatex}
+\addbibresource{references.bib} 
 \usepackage{times}
 \usepackage{xcolor}
-\usepackage{amsmath, amssymb} % For better math
-\usepackage{lmodern}   
+\usepackage{amsmath, amssymb}
+\usepackage{lmodern}
+\usepackage{url} 
 \title{Signals and systems Lab 1}
-\author{Denzel Onyango Ninga
-ENG-219-042/2022}
+\author{Denzel Onyango Ninga \\ ENG-219-042/2022}
 \date{March 2025}
 
 \begin{document}
@@ -16,14 +20,13 @@ ENG-219-042/2022}
 
 \section{Abstract}
 In this lab report, I will be able to analyze and explain the plots of specific signals: signum, rectangular, triangular, sinc, impulse,
-step, square, discrete exponential, and discrete cosine.I will also analyze the relationship between frequencies for discrete cosine and exponential signals. I will State and verify the Cauchy-Schwarz inequality, Classify systems based on linearity, time-invariance, causality, and stability and perform advanced signal operations and analyze their properties.By use of MATLAB plot and calculate these , I'll verify.
+step, square, discrete exponential, and discrete cosine.I will also analyze the relationship between frequencies for discrete cosine and exponential signals. I will state and verify the Cauchy-Schwarz inequality, classify systems based on linearity, time-invariance, causality, and stability, and perform advanced signal operations and analyze their properties. By using MATLAB plot and calculate these, I will verify.
 \section{Introduction}
-First off, a signal is a function representing a physical quantity or variable and a system is a mathematical model of a physical process that relates the input signal to the output signal. 
+First, a signal is a function that represents a physical quantity or variable, and a system is a mathematical model of a physical process that relates the input signal to the output signal. 
 The origin of the word systems dates back to the 15th century, 
-when it was used as a Latin word \textit{systema}, 
-which means the entire universe.\footnote{Fatoş Tunay Yarman Vural and Emre Akbaş, 
-\textit{Signals and Systems: Theory and Practical Explorations with Python} 
-(CRC Press, 2022), p. 19.}
+when it was used as a Latin word The origin of the word systems dates back to the 15th century,
+when it was used as a Latin word \textit{systema},
+which means the entire universe \cite[p.~19]{vural2022signals}. 
 Signal and system concepts arise in a wide variety of areas, from home-oriented consumer electronics and multimedia entertainment products to sophisticated communications, aeronautics and astronautics, and control. Of course, signals and systems are the entire universe.Signals and systems are the backbone of communication.
 \subsection{Lab Objectives}
 The objectives of this lab are:
@@ -32,41 +35,41 @@ The objectives of this lab are:
     \item Use subplots to analyze the relationship between frequencies for discrete cosine and exponential signals.
     \item Calculate inner products of signals and use them to compute energy and power, comparing hand calculations with code results.
     \item State and verify the Cauchy-Schwarz inequality.
-    \item Classify systems based on linearity, time-invariance, causality, and stability.
+    \item Classify systems based on linearity, time invariance, causality, and stability.
     \item Perform advanced signal operations and analyze their properties.
 \end{itemize}
 
 \section{Methodology}
 Most of this lab was completing the skeleton codes provided in the Lab Manual 'Signal and System Analysis Lab 1'.I did this using MATLAB R2024b and I did use alternatives for certain codes since I just did not have certain toolboxes such as the rectangular Toolbox, so I used Rectangular function alternatively for rectangularPulse. It was a success. I ran all my codes in the live script in MATLAB, ran each section separately, making the necessary changes to ensure it was a success and of course it was.
 
-Also, I did the hand calculations and verified the results.It was rough here as I was involved with finding the inner product and calculating the catchy-schwarz inequalities, thanks to Indian YouTubers-they are geniuses.The YouTube channel The grade Academy ,video titled 'Real Analysis lecture 10 -catchy-schwartz inequality Proof' was a life saver.\footnote{The Grade Academy, 
-\textit{Real Analysis Lecture 10 - Cauchy-Schwarz Inequality Proof},YouTube,Published on[2021],\url{https://youtu.be/i851HnlBpv8?si=HBe9MPFa9HZwLYDF},accessed on [18/3/2025].} 
+Also, I did the hand calculations and verified the results.It was rough here as I was involved with finding the inner product and calculating the catchy-schwarz inequalities, thanks to Indian YouTubers-they are geniuses.
 The methodology included:
 \begin{itemize}
+   \item Completion of the MATLAB skeleton codes
     \item Running MATLAB codes to generate and analyze signal plots.
-     \item Reading necessary materials,including Textbooks to understand various concepts and just to cross check them.
-    \item Watching YouTube videos to grasp the underlying concepts.
-    \item Performing hand calculations to verify MATLAB results and ensure theoretical accuracy.
-    \item Researching the internet .
+     \item Reading necessary materials, including textbooks to understand various concepts and just to cross-check them.
+    \item Performing hand calculations to verify the MATLAB results and ensure theoretical accuracy.
+    \item Research the Internet and use on-line tools to understand concepts.
+     \item Updating my Github repository on the lab: \href{https://github.com/plochoidysis-ojwege/Signals-and-systems-lab/tree/main/Signals\%20and\%20systems\%20lab\%201}{Signals and Systems Lab 1 GitHub Repository}
 \end{itemize}
 \normalsize
 \section{Results}
-The results after completing or even making necessary improvements to the MATLAB skeleton codes and performing hand calcculations were as follows;
-\subsection{MATLAB Code}
-The MATLAB code used in this lab is provided below It contains the full implementation for generating and analyzing the signals:
-\includepdf[pages=-, scale=0.9]{ninga.pdf}
+The results after completing or even making necessary improvements to the MATLAB skeleton codes and performing hand calculations were as follows;
+\subsection{MATLAB Codes}
+The MATLAB codes used in this lab is provided as PDF named 'MATLAB code' in this folder. It contains the full implementation to generate and analyze signals.To implement the code for each signal or each system analysis, check out my MATLAB codes on GitHub:  \href{https://github.com/plochoidysis-ojwege/Signals-and-systems-lab/tree/main/Signals\%20and\%20systems\%20lab\%201/Results/matlab\%20codes}{MATLAB codes}
 \subsection{Hand calculations}
-The hand calculations below aligned mostly with code results:
-\includepdf[pages=-, scale=0.9]{hands.pdf}
+The hand calculations aligned mostly with code results, these results are also included in this folder as a scanned document named "hands.pdf"
+
+
 \section{Discussions and Observations}
 
-\subsection{Exercise 1: Plotting Specific Signals}
+\subsection{Exercise 1: Graph of specific signals}
 
 \subsubsection{1) Continuous-Time (CT) Signals}
-The following were the results after running the codes for the continuous-time signals.
+The following are the results after running the codes for the continuous-time signals.
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.6\textwidth]{Figure_4.png}
+    \includegraphics[width=0.5\textwidth]{Figure_4(CT signals).png}
     \caption{Continuous-Time functions plots}
     \label{fig:signum}
 \end{figure}
@@ -148,7 +151,7 @@ This function is even and is crucial in sampling theory.
 The following were the results after running the codes for the discrete-time signals.
 \begin{figure}[h]
     \centering
-    \includegraphics[width=1.0\textwidth]{Figure_3 (1).png}
+    \includegraphics[width=0.5\textwidth]{Figure_3 (DT signals).png}
     \caption{Discrete-Time Functions Plots}
     \label{fig DT}
 \end{figure}
@@ -212,7 +215,7 @@ Both DT and CT plots confirmed the theoretical and mathematical descriptions, de
 \subsubsection{1. Discrete Cosine}
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.6\textwidth]{Figure_2.png}
+    \includegraphics[width=0.4\textwidth]{Figure_2(Cosine signals).png}
     \caption{Discrete cosine Function Plot}
     \label{fig:Discrete cosine}
 \end{figure}
@@ -227,7 +230,7 @@ verifying DFT symmetry properties.
 Similarly, the discrete exponential signals with \(k + l = N\) show that they represent the same frequency but with different phase shifts, indicating mirrored frequencies.
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.6\textwidth]{Figure_5.png}
+    \includegraphics[width=0.5\textwidth]{Figure_5.png}
     \caption{Discrete Exponential Plot}
     \label{fig:discrete exponential}
 \end{figure}
@@ -241,11 +244,11 @@ For DT signals, the inner product of \(\cos(2\pi n/10)\) and \(\sin(2\pi n/10)\)
 By hand calculations and MATLAB code, the energy of \(x(t) = \sin(2\pi t)\) was 0.5, and its power was also 0.5. The DT signals also matched the theoretical values. 
 
 \paragraph{3. Cauchy-Schwarz Inequality}
-The code confirmed the inequality holds for both CT and DT signals, indicating numerical computations are consistent with theory.
+The code confirmed that the inequality holds for both CT and DT signals, indicating that the numerical calculations are consistent with theory.
 
 \subsection{Exercise 4: System Classifications}
 
-\paragraph{1. Linearity and Time-Invariance}
+\paragraph{1. Linearity and Time Invariance}
 For the systems \(y(t) = x(t) + x(t - 1)\) (CT) and \(y[n] = x[n] + x[n - 1]\) (DT), linearity failed. Time-invariance also failed due to the shifted term, as confirmed by MATLAB code.
 
 \paragraph{2. Causality and Stability}
@@ -291,24 +294,16 @@ Practical applications as seen in the discussion part include;
         \item \textbf{Energy and Power Calculations:} Inner products are used to calculate the energy and power of a signal thus ensuring safety in transmitting and processing signals.
     \end{itemize}
 \end{itemize}
-This applications have been proved in this lab report as observed in the Discussion section.
+These applications have been proved in this lab report as observed in the Discussion section.
 \section{Conclusion}
-This lab provided a comprehensive exploration of signals and systems, combining theoretical analysis with practical implementation. By completing this lab, I gained a
- deeper understanding of signal properties, operations, and system classifications. I now have the ability to verify theoretical results using computational tools. All this Lab ran successfully as the objectives were achieved and the codes were implemented successfully.
- 
- \section{References}
-\begin{thebibliography}{9}
+This laboratory provided a comprehensive exploration of signals and systems, combining theoretical analysis with practical implementation. By completing this lab, I gained a
+ deeper understanding of signal properties, operations, and system classifications. Now I have the ability to verify theoretical results using computational tools. All this Lab ran successfully as the objectives were achieved and the codes were implemented successfully.
+ \section{References} 
+ \nocite{*}
+ \printbibliography
 
-\bibitem{labmanual2025} 
-Martin Wafula. (2025). \textit{Signals and Systems Lab Manual}. Course Material.
-\bibitem{gangli2020} 
-Li, G. (2020). \textit{Signals and Systems}. Springer.
-\bibitem{yarman2022} 
-Yarman Vural, F. T. (2022). \textit{Signals and Systems: Theory and Practical Explorations with Python}. CRC Press.
-\bibitem{oppenheim1996} 
-Oppenheim, A. V., Willsky, A. S., & Nawab, S. H. (1996). \textit{Signals and Systems} (2nd ed.). Prentice Hall.
 
-\end{thebibliography}
+
 
  
 
