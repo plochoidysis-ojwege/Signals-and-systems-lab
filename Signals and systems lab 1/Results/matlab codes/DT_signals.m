@@ -8,9 +8,9 @@ u_n = (n >= 0);
 square_n = (n >= 0) & (n < 5);
 % Discrete exponential
 exp_n = exp(1j * pi * n / 5);
-% Discrete cosine (added as a missing subplot)
+% Discrete cosine
 cos_n = cos(pi * n / 5);
-% Plot DT signals in a 2x3 grid so all signals are visible.
+% Plot DT signals in a 2x3 grid.
 figure;
 subplot(2,3,1); stem(n, delta_n, 'filled'); title('Impulse Function');
 subplot(2,3,2); stem(n, u_n, 'filled'); title('Step Function');
